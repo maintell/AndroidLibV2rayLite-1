@@ -53,7 +53,7 @@ DOWNLOAD_URL="https://dl.google.com/android/repository"
 SDK_FILE_NAME="sdk-tools-linux-4333796.zip"
 GO_FILE_NAME="go1.13.5.linux-amd64.tar.gz"
 
-ANDROID_HOME="${root_dir}/android-sdk"
+ANDROID_HOME="/home/runner/work/AndroidLibV2rayLite-1/AndroidLibV2rayLite-1/android-sdk"
 ANDROID_NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 PACKAGE_INSTALL_FILE="android_package_to_install"
 
