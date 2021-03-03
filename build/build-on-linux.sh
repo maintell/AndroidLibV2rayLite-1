@@ -42,8 +42,10 @@ done
 
 
 echo "set env ......"
+pwd
 current_dir=$(cd "$(dirname "$0")";pwd)
 root_dir=${current_dir}/..
+mkdir /root/android-sdk
 
 # ------------------------------------------------------
 # --- set ENV
