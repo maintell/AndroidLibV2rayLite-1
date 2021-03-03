@@ -45,7 +45,7 @@ echo "set env ......"
 pwd
 current_dir=$(cd "$(dirname "$0")";pwd)
 root_dir=${current_dir}/..
-mkdir /root/android-sdk
+mkdir android-sdk
 
 # ------------------------------------------------------
 # --- set ENV
@@ -53,7 +53,7 @@ DOWNLOAD_URL="https://dl.google.com/android/repository"
 SDK_FILE_NAME="sdk-tools-linux-4333796.zip"
 GO_FILE_NAME="go1.13.5.linux-amd64.tar.gz"
 
-ANDROID_HOME="/root/android-sdk"
+ANDROID_HOME="${root_dir}/android-sdk"
 ANDROID_NDK_HOME="${ANDROID_HOME}/ndk-bundle"
 PACKAGE_INSTALL_FILE="android_package_to_install"
 
