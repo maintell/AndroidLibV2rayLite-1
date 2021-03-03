@@ -110,10 +110,10 @@ if [[ ${update_android_sdk} == "1" ]] ; then
     echo "sdkmanager install tools ....."
     ping 127.0.0.1 -c 16
 
-    sdkmanager --verbose --list | awk -f ${root_dir}/build/awk/parse.awk > ${ANDROID_HOME}/${PACKAGE_INSTALL_FILE}
+    /home/runner/work/AndroidLibV2rayLite-1/AndroidLibV2rayLite-1/android-sdk/tools/bin/sdkmanager --verbose --list | awk -f ${root_dir}/build/awk/parse.awk > ${ANDROID_HOME}/${PACKAGE_INSTALL_FILE}
     readarray -t package_names < ${ANDROID_HOME}/${PACKAGE_INSTALL_FILE}
-    yes | sdkmanager --verbose --install "${package_names[@]}" | awk -f ${root_dir}/build/awk/reduce.awk
-    yes | sdkmanager "ndk-bundle"
+    yes | /home/runner/work/AndroidLibV2rayLite-1/AndroidLibV2rayLite-1/android-sdk/tools/bin/sdkmanager  --verbose --install "${package_names[@]}" | awk -f ${root_dir}/build/awk/reduce.awk
+    yes | /home/runner/work/AndroidLibV2rayLite-1/AndroidLibV2rayLite-1/android-sdk/tools/bin/sdkmanager  "ndk-bundle"
 fi
 
 
