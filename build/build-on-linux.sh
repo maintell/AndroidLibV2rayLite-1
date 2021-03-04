@@ -108,7 +108,6 @@ if [[ ${update_android_sdk} == "1" ]] ; then
     # ------------------------------------------------------
     # --- install package and NDK
     echo "sdkmanager install tools ....."
-    ping 127.0.0.1 -c 16
 
     /home/runner/work/AndroidLibV2rayLite-1/AndroidLibV2rayLite-1/android-sdk/tools/bin/sdkmanager --verbose --list | awk -f ${root_dir}/build/awk/parse.awk > ${ANDROID_HOME}/${PACKAGE_INSTALL_FILE}
     readarray -t package_names < ${ANDROID_HOME}/${PACKAGE_INSTALL_FILE}
